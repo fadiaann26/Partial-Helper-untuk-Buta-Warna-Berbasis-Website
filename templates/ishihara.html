@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Partial Helper
+		</title>
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!-- <nav class="navbar navbar-expand-lg costum-bg">
+			<div class="container navbar-separeted">
+				<a class="navbar-brand" href="/index">
+					<img src="{{ url_for('static', filename='image/logo.png') }}" alt="imgae" class="navbar-logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="/">Home</a>
+						</li>
+	
+						<li class="nav-item">
+							<a class="nav-link" href="/feedback">FeedBack</a>
+						</li>
+	
+					</ul>
+				</div>
+			</div>
+		</nav> -->
+		<div id="header" class="contentcontainer">
+			<h1>
+				Tes Buta Warna-Partial Helper
+			</h1>
+		</div>
+		<div id="content" class="contentcontainer">
+			<div id="canvasframe">
+				<canvas id="numberCanvas" width="450" height="300">
+					Your browser is not supported by this site.<br />
+					Please upgrade to a more recent version.
+				</canvas>
+			</div>
+			<div id="testInputs">
+				<div class="testInfo">
+					<h2>Tes Sebelumnya</h2><br />
+					<span id="previousType">(Tidak ada)</span><br />
+					Kesulitan: <span id="previousDifficulty">0</span>/10<br />
+					<span id="previousCorrect"></span>
+				</div>
+				<div id="inputsContainer">
+					<label for="number">Saya melihat angka: </label><input id="numberInput" name="number" type="text" value="" autofocus onkeydown="setTimeout(inputKeydown);" /><button id="nextButton" onclick="next();" title="Tip: Press Enter">Selanjutnya</button>
+					<br />
+					<button id="noNumberButton" onclick="skip();">Saya tidak melihat angka (x)</button>
+				</div>
+				<div class="testInfo">
+					<h2>Pengujian Saat Ini</h2><br />
+					<span id="currentType"></span><br />
+					Kesulitan: <span id="currentDifficulty">0</span>/10<br />
+				</div>
+			</div>
+			<div id="info">
+				<p>Berikut adalah uji coba yang dirancang untuk membantu Anda menentukan apakah Anda menderita daltonisme, jenis daltonisme yang Anda miliki, dan seberapa parah kondisinya.</p>
+				<p>Namun, hasil dari uji coba ini tidak dijamin akurat (Anda sebaiknya tidak mengambil saran medis dari internet).</p>
+				<p>Karena setiap uji coba dihasilkan secara acak, hasilnya dapat bervariasi.</p>
+				<button onclick="window.location.href='/';">Back to Home</button>
+			</div>
+		</div>
+		<div id="rightbar" class="contentcontainer">
+			<div class="resultdiv">
+				<h2>Protanopia</h2>
+				<br />
+				<span id="protanopiaText">Belum ada hasil.</span>
+				<div class="percentBarContainer" id="protanopiaBarContainer">
+					<div class="percentBar" id="protanopiaBar">
+					</div>
+				</div>
+			</div>
+			<div class="resultdiv">
+				<h2>Deuteranopia</h2>
+				<br />
+				<span id="deuteranopiaText">Belum ada hasil.</span>
+				<div class="percentBarContainer" id="deuteranopiaBarContainer">
+					<div class="percentBar" id="deuteranopiaBar">
+					</div>
+				</div>
+			</div>
+			<div class="resultdiv">
+				<h2>Tritanopia</h2>
+				<br />
+				<span id="tritanopiaText">Belum ada hasil.</span>
+				<div class="percentBarContainer" id="tritanopiaBarContainer">
+					<div class="percentBar" id="tritanopiaBar">
+					</div>
+				</div>
+			</div>
+			<div class="resultdiv">
+				<h2>Secara Keseluruhan</h2>
+				<br />
+				<span id="overallText">Belum ada hasil.</span>
+				<div class="percentBarContainer" id="overallBarContainer">
+					<div class="percentBar" id="overallBar">
+					</div>
+				</div>
+			</div>
+			<div id="copyright">
+				Partial Helper, under the <a href="https://www.poltektegal.ac.id/">Politeknik Harapan Bersama </a>.<br />
+				Copyright 2023 - <a href="https://github.com/Ivander-Josh-Santoso/partial-helper">Github</a>
+			</div>
+		</div>
+		
+		
+		<canvas id="prerenderCanvas" width="30" height="20">
+			
+		</canvas>
+
+		
+		
+		
+	</body>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/colorblindness.js') }}"></script>
+</html>
+
+
+
+
+

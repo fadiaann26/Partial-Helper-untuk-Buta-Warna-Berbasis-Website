@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Partial Helper</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="PartialHelper"><img src="static/Logo.png" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/video_feed">KAMERA</a></li>
+            <li><a href="/chatbot">CHATBOT</a></li>
+            <li><a href="/ishihara">TES BUTA WARNA</a></li>
+            <li><a href="/feedback">FEEDBACK</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="" class="btn">DOWNLOAD APP</a>
+        </div>
+      </nav>
+      <div class="content">
+        <h1>Partial Helper</h1>
+        <p>Bantuan Warna Dalam Genggamanmu!</p>
+        <a href="/ishihara" class="content-btn">Tes Buta Warna Disini</a>
+      </div>
+    </section>
+
+    <!------ materi ------>
+
+    <section class="materi">
+      <div class="box-materi">
+        <div class="card">
+          <h5>Apa itu Buta Warna Parsial?</h5>
+          <div class="pra">
+            <p>Buta warna parsial adalah kondisi di mana seseorang mengalami kesulitan dalam membedakan beberapa warna tertentu, biasanya disebabkan oleh ketidaknormalan dalam jenis kerucut mata yang mengenali warna.</p>
+            <a href="Materi1.html" class="materi-btn">Baca Selengkapnya</a>
+          </div>
+        </div>
+        <div class="card">
+          <h5>Jenis Buta Warna Parsial</h5>
+          <div class="pra">
+            <p>
+              1. Buta Warna Merah-Hijau
+              <br />
+              Kondisi ini bisa terjadi jika fotopigmen di kerucut merah atau kerucut hijau mata tidak berfungsi sebagaimana mestinya. <br />
+              <br />2. Buta Warna Biru-Kuning <br />
+              Kondisi buta warna parsial ini diakibatkan oleh sel kerucut biru yang tidak berfungsi dengan baik.
+            </p>
+            <a href="Materi2.html" class="materi-btn">Baca Selengkapnya</a>
+          </div>
+        </div>
+        <div class="card">
+          <h5>Penyebab Buta Warna Parsial</h5>
+          <div class="pra">
+            <p>
+              - Penyakit kronis
+              <br />- Faktor keturunan <br />- Efek samping obat <br />- Bertambahnya usia <br />- Terpapar cairan kimia
+            </p>
+            <a href="Materi3.html" class="materi-btn">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------ warna ------>
+
+    <section class="warna">
+      <h1>Mari Mengenal Warna</h1>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </section>
+
+    <!------ kamera ------>
+
+    <section class="kamera">
+      <div class="tulisan">
+        <h1>Mari Lihat Warna Disekitarmu!</h1>
+        <a href="" class="btn-kamera">Buka Kamera!</a>
+      </div>
+    </section>
+
+    <!------ chatbot ------>
+
+    <!-- Tombol chatbot -->
+    <button class="chatbot-button" href="/chatbot" id="open-chatbot">Chat</button>
+    
+
+    <!-- Popup chatbot -->
+    <div class="chatbot-popup" id="chatbot-popup">
+      <div class="chatbot-header">
+        <h3>Partial Helper</h3>
+        <button class="close-button" id="close-chatbot"><b>X</b></button>
+      </div>
+      <div class="chatbot-content">
+        <!-- Isi chatbot di sini -->
+        <p>Selamat datang di chatbot kami!</p>
+      </div>
+    </div>
+    <script>
+      // Fungsi untuk membuka popup chatbot
+      document.getElementById('open-chatbot').addEventListener('click', function () {
+        document.getElementById('chatbot-popup').style.display = 'block';
+      });
+      // Fungsi untuk menutup popup chatbot
+      document.getElementById('close-chatbot').addEventListener('click', function () {
+        document.getElementById('chatbot-popup').style.display = 'none';
+      });
+    </script>
+
+    <!------ footer ------>
+
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href=""><i class="icon ion-social-instagram"></i></a>
+          <a href=""><i class="icon ion-social-whatsapp"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="PartialHelper.html">HOME</a></li>
+          <li class="list-inline-item"><a href="">KAMERA</a></li>
+          <li class="list-inline-item"><a href="chatbot">CHATBOT</a></li>
+          <li class="list-inline-item"><a href="/ishhara">TES BUTA WARNA</a></li>
+        </ul>
+        <p class="copyright">PartialHelper © 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>

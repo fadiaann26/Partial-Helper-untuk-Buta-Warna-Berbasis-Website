@@ -1,0 +1,247 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#prerenderCanvas{
+	visibility: hidden;
+	position: absolute;
+}
+
+body{
+	background-color: #FFFFFF;
+	font-family: "Open Sans", sans-serif;
+}
+
+/*navbar*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 180px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #5A6BCA;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #89D8EA;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+    width: 100%;
+
+}
+
+
+h1{
+	display: inline-block;
+	font-weight: 300;
+	color: #5a6bca;
+	margin: 30px 10px 0px 10px;
+	font-size: 40px;
+	line-height: 0px;
+}
+
+h2{
+	display: inline;
+	line-height: 1em;
+	font-size: 1.1em;
+}
+
+a{
+	color: #FFBB00;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #FFBB00;
+}
+
+a:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+textarea,
+div [contenteditable="true"]{
+	font-size: 14px;
+	border: 2px #DDDDDD groove;
+	outline: none;
+	background-color: #FFFFFF;
+	white-space: pre;
+	overflow-y: auto;
+}
+
+button{
+	border: 2px #DDDDDD outset;
+	background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);
+	padding: 3px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 5px;
+}
+
+button:hover{
+	border: 2px #DDDDDD outset;
+	background-color: #FFFFFF;
+	background-image: none;
+}
+
+button:active{
+	border: 2px #DDDDDD inset;
+	background-image: linear-gradient(to top, #FFFFFF, #EEEEEE);
+}
+
+input[type="text"]{
+	border: 2px #DDDDDD groove;
+	outline: none;
+	height: 14px;
+	padding: 2px;
+}
+
+.contentcontainer{
+	position: absolute;
+	border: 1px #d3f1fd solid;
+	background-color: #d3f1fd;
+	overflow: auto;
+}
+
+/*
+======== Layout ======== 
+*/
+
+#header{
+	top: 10px;
+	right: 10px;
+	left: 10px;
+	height: 70px;
+}
+
+#rightbar,
+#content{
+	top: 90px;
+}
+
+#content{
+	left: 10px;
+	bottom: 10px;
+	right: 320px;
+}
+
+#rightbar{
+	right: 10px;
+	bottom: 10px;
+	width: 300px;
+}
+
+/*
+======== /Layout ======== 
+*/
+
+#info{
+	border: 1px #FFFFFF solid;
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+#content{
+	text-align: center;
+	padding-top: 10px;
+}
+
+#canvasframe{
+	background-color: #000000;
+	padding: 10px;
+	margin: 0px 10px;
+}
+
+#testInputs{
+	border: 1px #d3f1fd solid;
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+#inputsContainer{
+	display: inline-block;
+	height: 100%;
+	border: #d3f1fd solid;
+	border-width: 0px 1px;
+	width: 300px;
+}
+
+.testInfo{
+	width: 150px;
+	display: inline-block;
+	font-size: 0.7em;
+	vertical-align: top;
+}
+
+#numberInput{
+	width: 40px;
+	height: 15px;
+}
+
+#nextButton{
+	margin-left: 5px;
+}
+
+#noNumberButton{
+	margin: 5px;
+}
+
+.resultdiv{
+	border: 1px #FFFFFF solid;
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin: 10px;
+}
+
+.percentBarContainer{
+	height: 20px;
+	border: 1px #5a6bca solid;
+	background: linear-gradient(to bottom, #666666, #5a6bca);
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.percentBar{
+	height: 100%;
+	border-right: 1px #d3f1fd solid;
+	background: linear-gradient(to bottom, #FFFFFF, #DDDDDD);
+	width: 0%;
+	margin-left: -1px;
+}
+
+#copyright{
+	position: absolute;
+	bottom: 0px;
+	margin: 10px;
+	font-size: 0.9em;
+	color: #5a6bca;
+}
+
